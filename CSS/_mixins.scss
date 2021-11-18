@@ -1,0 +1,6 @@
+@mixin backImg($image-url, $position) {
+  background-image: url($image-url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: $position;
+}

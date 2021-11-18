@@ -1,0 +1,35 @@
+.app-footer {
+  background: $main-dark;
+  color: $secondary-color;
+  line-height: 0.87rem;
+  padding-top: 52px;
+  padding-bottom: 75px;
+
+  & > .app--wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 17px 0;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .app-footer__logo-img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.app-footer__logo {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: $main-color;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  letter-spacing: 0.2em;
+}
+
+.app-footer__email {
+  text-decoration: none;
+  color: $secondary-color;
+}

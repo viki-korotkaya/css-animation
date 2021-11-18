@@ -1,0 +1,42 @@
+.app-header {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  padding: 0 3.5%;
+  display: grid;
+  grid-template-columns: 100px 24px;
+  justify-content: space-between;
+  color: $main-color;
+  z-index: $header-index;
+
+  & > .app-header__link-logo {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  & > .app-header__nav {
+    display: none;
+  }
+}
+
+.app--hamburger {
+  width: 24px;
+  height: 23px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  & > div {
+    width: 95%;
+    height: 3px;
+    background-color: $main-color;
+  }
+}

@@ -1,0 +1,47 @@
+.app-main {
+  padding: 85px 0 116px;
+  background: #EEEEEE;
+  text-align: left;
+  color: $main-dark;
+
+  .app-main__header1,
+  .app-main__header2 {
+    text-align: left;
+  }
+
+  .app-main__header1 {
+    margin-bottom: 25px;
+    width: 340px;
+  }
+
+  .app-main__header2 {
+    margin-bottom: 28px;
+    color: $secondary-dark;
+  }
+
+  .app-main__article {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px 0;
+    text-align: left;
+  }
+
+  .app-main__button {
+    width: 115px;
+    height: 38px;
+    margin-top: 38px;
+    background: $main-blue;
+    border: none;
+    border-radius: 18px;
+    color: $main-color;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: $header-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    letter-spacing: 0.1em;
+  }
+}

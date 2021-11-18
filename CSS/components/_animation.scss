@@ -1,0 +1,61 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: scale(1.04);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+//app-hero animation: shining and moving
+.app-hero__background--star-shining {
+  animation: fadeIn 2s ease-out infinite alternate;
+}
+
+.app-hero__background--star-moving {
+  animation: move 2.5s ease infinite alternate;
+  transform-origin: 95% 50%;
+}
+
+//app-hero transformation: logo rotating and scaling
+.app-hero__main-logo-container {
+  &:hover{
+    .app-hero__main-logo {
+      transform: rotateY(0.5turn) scale(1.5);
+    }
+  }
+}
+
+.app-hero__main-logo {
+  transition: transform .4s cubic-bezier(.68,.33,.22,.61) .1s;
+}
+
+//app-main animation: button rotating
+.app-main__button {
+  transform-origin: left center;
+  transition: transform .4s .2s;
+
+  &:hover {
+    transform: rotate(15deg);
+  }
+}
+
+//app-learn-more animation: button shrinks and changes color
+.app-learn-more__button {
+  transition: all .2s;
+
+  &:hover {
+    transform: scale(.97);
+    background: $main-color;
+    color: $secondary-blue;
+  }
+}

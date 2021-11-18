@@ -1,0 +1,151 @@
+//media for desktop
+@media only screen and (min-width: 769px) {
+  body {
+    max-width: 1200px;
+  }
+
+  .app--wrapper {
+    padding: 0 12.5%;
+  }
+
+  .app-header {
+    text-align: left;
+    grid-template-columns: 28% 72%;
+    justify-items: start;
+    padding: 0 12.5%;
+
+    & > .app-header__nav {
+      display: block;
+      font-size: 0.875rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+
+      & > .app-header__nav-list {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        line-height: 2;
+        text-align: right;
+        gap: 0 30px;
+      }
+
+      .app-header__nav-item {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .app-header__nav-item--active {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      background-color: $main-color;
+      width: 100%;
+      top: 30px;
+      left: 0;
+    }
+  }
+
+  .app--hamburger {
+    display: none;
+  }
+
+  .app-hero {
+    padding-top: 45px;
+    background-position: center;
+    height: 800px;
+  }
+
+  .app-hero__background {
+    .app-hero__background--star-shining,
+    .app-hero__background--star-moving {
+      object-fit: cover;
+      object-position: center;
+      left: 0;
+    }
+  }
+
+  .app-main {
+    text-align: center;
+    padding-bottom: 96px;
+
+    .app-main__header1,
+    .app-main__header2 {
+      text-align: center;
+    }
+
+    .app-main__header1 {
+      width: auto;
+      margin-bottom: 40px;
+    }
+
+    .app-main__header2 {
+      margin-bottom: 48px;
+    }
+
+    .app-main__article {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 7%;
+    }
+
+    .app-main__button {
+      margin-top: 46px;
+    }
+  }
+
+  .app-learn-more {
+    padding: 84px 0 90px;
+
+    .app-learn-more__header1 {
+      margin-bottom: 53px;
+    }
+
+    .app-learn-more__button {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 70px;
+      padding-left: 15px;
+      border-radius: 75px;
+      font-size: 60px;
+    }
+  }
+
+  .app-footer {
+    padding-top: 56px;
+
+    & > .app--wrapper {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 16px 0;
+      justify-items: stretch;
+      text-align: left;
+    }
+  }
+
+  .app-footer__logo {
+    margin-bottom: 14px;
+    padding-left: 5px;
+  }
+
+  .app-footer__logo {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .app-footer__address {
+    grid-column: 3 / 8;
+    grid-row: 1 / 2;
+  }
+  .app-footer__email {
+    grid-column: 3 / 6;
+    grid-row: 2 / 3;
+  }
+
+  .app-footer__copyright {
+    grid-column: 6 / 8;
+    grid-row: 2 / 3;
+  }
+}

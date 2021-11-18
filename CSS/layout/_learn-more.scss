@@ -1,0 +1,23 @@
+.app-learn-more {
+  @extend %block-with-background-image;
+  @include backImg("../assets/backgoundLearnMore.png", center);
+  padding: 72px 0 74px;
+  color: $main-color;
+
+  .app-learn-more__header1 {
+    margin-bottom: 92px;
+  }
+
+  .app-learn-more__button {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 80px;
+    padding-left: 10px;
+    background: $secondary-blue;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    color: $main-color;
+    font-size: 2.5rem;
+  }
+}

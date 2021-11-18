@@ -1,0 +1,24 @@
+$main-font: 'Source Sans Pro', sans-serif;
+$header-font: 'Oswald', sans-serif;
+
+$white: #FFFFFF;
+$white-cloudy: rgba(255, 255, 255, 0.7);
+$white-dark: rgba(255, 255, 255, 0.4);
+$grey-dark: #464547;
+$grey: #666666;
+$blue1: #55C2D8;
+$blue2: #39C2D7;
+
+$main-color: $white;
+$main-dark: $grey-dark;
+$secondary-dark: $grey;
+$main-blue: $blue1;
+$secondary-blue: $blue2;
+$secondary-color: $white-dark;
+
+$image-size: 63px;
+
+$top-layer-index: 1;
+$bottom-layer-index: 0;
+$header-index: 3;
+$modal-index: 1000;
